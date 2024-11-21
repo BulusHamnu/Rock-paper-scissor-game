@@ -24,3 +24,11 @@ body {
     margin-right: 10px;
     cursor: pointer;
 }
+
+@media screen  and (max-width: 430px) {
+    .Gbtn {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+}
