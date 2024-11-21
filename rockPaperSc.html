@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scizzor game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Rock Paper Scissors</h3>
+        <button class="Gbtn" id="Rockbtn" onclick="playerChoice = 'Rock' ;play (playerChoice)">✊</button>
+        <button class="Gbtn" id="Paperbtn" onclick="playerChoice = 'Paper'; play (playerChoice)">✋</button>
+        <button class="Gbtn" id="Scissorbtn" onclick="playerChoice = 'Scissor'; play (playerChoice)">✌️</button>
+        <h3 id="choiceDisplay"></h3>
+        <h5 id="playerFate" style="color: white;"></h5>
+        <div style="display: flex; gap: 15px; margin-top:30px;">
+
+            <div style="display: flex;gap:5px;"><p>Wins:</p><p id="Wnum">0</p></div>
+            
+            <div style="display: flex;gap:5px;"><p>Losses:</p><p id="Lnum">0</p></div>
+
+            <div style="display: flex;gap:5px;"><p>Draw:</p><p id="Dnum">0</p></div>
+
+        </div>
+        <button onclick="resetScore()" style="padding: 3px;cursor:pointer;">Reset Score</button>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
